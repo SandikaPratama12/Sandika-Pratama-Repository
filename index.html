@@ -1,124 +1,114 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lab5Web</title>
-  </head>
-  <body>
-    <label for="bilangan">Masukkan bilangan bulat:</label>
-    <input type="number" id="bilangan" step="1" />
-    <button type="button" onclick="cekBilangan()">Periksa</button>
-    <p id="hasilBilangan"></p>
+<!DOCTYPE html> 
+<html lang="id"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Praktikum DOM dan Event</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script> 
+</head> 
+<body> 
+    <h1 id="judul">Latihan DOM</h1> 
+    <p id="pesan">Belum ada tindakan.</p> 
+    <button id="tombolAksi" type="button">Klik Saya</button> 
 
-    <h3>Cek Bilangan Genap atau Ganjil</h3>
+<p id="teksGaya">Ini adalah teks untuk latihan mengubah gaya CSS.</p>
+<button id="tombolGaya" type="button">Ubah Gaya Teks</button>
 
-    <input type="number" id="bilangan" placeholder="Masukkan bilangan bulat" />
+<label for="namaInput">Nama:</label>
+<input type="text" id="namaInput" maxlength="40">
+<p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
 
-    <button onclick="cekBilangan()">Periksa</button>
+<h2>Form Pendaftaran</h2>
 
-    <p id="hasilBilangan"></p>
+<form id="formPendaftaran" novalidate>
+    <label for="nama">Nama lengkap</label>
+    <input id="nama" name="nama" type="text">
+    <br><br>
 
-    <script src="script.js"></script>
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email">
+    <br><br>
 
-    <h3>Mengubah Warna</h3>
+    <label for="usia">Usia</label>
+    <input id="usia" name="usia" type="number" min="17" max="100">
+    <br><br>
 
-    <button onclick="ubahWarnaLatar('lightgreen')">Latar Hijau</button>
+    <button type="submit">Daftar</button>
+</form>
 
-    <button onclick="ubahWarnaLatar('white')">Latar Putih</button>
+<p id="pesanForm" aria-live="polite"></p>
 
-    <button onclick="ubahWarnaLatar('lightyellow')">Latar Kuning</button>
+<section>
+    <h2>Daftar Tugas</h2>
 
-    <script src="script.js"></script>
+    <label for="inputTugas">Tugas baru</label>
+    <input id="inputTugas" type="text">
 
-    <hr />
+    <button id="tambahTugas" type="button">Tambah</button>
 
-    <h3>Daftar Menu Makanan</h3>
+    <p id="pesanTugas" aria-live="polite"></p>
 
-    <label>
-      <input type="checkbox" class="menu" value="5000" />
-      Ayam Goreng - Rp5.000
-    </label>
-    <br />
+    <ul id="daftarTugas"></ul>
+</section>
 
-    <label>
-      <input type="checkbox" class="menu" value="5000" />
-      Tempe - Rp5.000
-    </label>
-    <br />
+  <!-- Mini Project F -->
+    <section class="workshop">
+        <h1>Form Pendaftaran Workshop</h1>
+        <p>Silakan isi data untuk mendaftar workshop.</p>
 
-    <label>
-      <input type="checkbox" class="menu" value="2500" />
-      Telur Dadar - Rp2.500
-    </label>
-    <br />
+        <form id="formWorkshop" novalidate>
+            <div class="form-group">
+                <label for="namaWorkshop">Nama lengkap:</label>
+                <input
+                    type="text"
+                    id="namaWorkshop"
+                    maxlength="40"
+                    placeholder="Masukkan nama lengkap"
+                >
+                <small>Jumlah karakter: <span id="hitungKarakter">0</span>/40</small>
+            </div>
 
-    <label>
-      <input type="checkbox" class="menu" value="3000" />
-      Es Teh - Rp3.000
-    </label>
-    <br />
+            <div class="form-group">
+                <label for="emailWorkshop">Email:</label>
+                <input
+                    type="text"
+                    id="emailWorkshop"
+                    placeholder="contoh@email.com"
+                >
+            </div>
 
-    <label>
-      <input type="checkbox" class="menu" value="4000" />
-      Nasi Putih - Rp4.000
-    </label>
-    <br />
+            <div class="form-group">
+                <label for="sesiWorkshop">Pilih sesi workshop:</label>
+                <select id="sesiWorkshop">
+                    <option value="">-- Pilih sesi --</option>
+                    <option value="HTML dan CSS">HTML dan CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                </select>
+                <p id="ringkasanSesi">Belum ada sesi dipilih.</p>
+            </div>
 
-    <p>Total: Rp<span id="total">0</span></p>
+            <p id="pesanWorkshop" aria-live="polite"></p>
 
-    <h3>Menghitung Nilai Akhir Mahasiswa</h3>
+            <div class="tombol-group">
+                <button type="submit">Daftar</button>
+                <button type="reset" class="tombol-reset">Reset</button>
+            </div>
+        </form>
+    </section>
+    
+<h3>Eksperimen Tombol Tampil/Sembunyi</h3>
 
-    <p>Nilai Tugas: 85</p>
-    <p>Nilai UTS: 78</p>
-    <p>Nilai UAS: 88</p>
+<p id="paragrafToggle">
+    Ini adalah paragraf yang bisa disembunyikan
+    dan ditampilkan kembali.
+</p>
 
-    <button onclick="hitungNilai()">Hitung Nilai Akhir</button>
+<button type="button" id="tombolToggle">
+    Sembunyikan/Tampilkan
+</button>
 
-    <p id="nilaiAkhir"></p>
-    <p id="predikat"></p>
-    <p id="status"></p>
 
-    <h3>Operasi Dua Angka</h3>
-    <button type="button" onclick="eksperimenOperasiPrompt()">
-      Mulai Operasi
-    </button>
-
-    <h3>Tabel Perkalian 7</h3>
-    <button type="button" onclick="tampilkanPerkalianTujuh()">
-      Tampilkan Tabel Perkalian
-    </button>
-
-    <h3>Cek Bilangan Genap</h3>
-    <button type="button" onclick="ujiCekGenap()">Uji Function</button>
-
-    <h3>Validasi Form</h3>
-
-    <form onsubmit="return validasiFormEksperimen();">
-      <label for="namaEksperimen">Nama:</label>
-      <input type="text" id="namaEksperimen" />
-      <br /><br />
-
-      <label for="nilaiEksperimen">Nilai:</label>
-      <input type="number" id="nilaiEksperimen" min="0" max="100" />
-      <br /><br />
-
-      <button type="submit">Periksa Form</button>
-    </form>
-
-    <h3>Tampilkan dan Sembunyikan</h3>
-
-    <p id="teksEksperimen">
-      Ini adalah teks yang bisa disembunyikan dan ditampilkan.
-    </p>
-
-    <button type="button" onclick="ubahVisibilitas()">
-      Sembunyikan / Tampilkan
-    </button>
-
-    <p id="hasilValidasi"></p>
-
-    <!-- javascript -->
-    <script src="script.js"></script>
-  </body>
+</body> 
 </html>
