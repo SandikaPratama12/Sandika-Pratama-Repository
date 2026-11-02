@@ -108,13 +108,17 @@ UTS Pemrograman web/
 
 ### screenshot
 
-![alt text](<img/ss/Screenshot 2026-11-02 163843.png>)
-![alt text](</img/ss/Screenshot 2026-11-02 163910.png>)
-![alt text](</img/ss/Screenshot 2026-11-02 163929.png>)
-![alt text](</img/ss/Screenshot 2026-11-02 163955.png>)
-![alt text](</img/ss/Screenshot 2026-11-02 164007.png>)
-![alt text](</img/ss/Screenshot 2026-11-02 164007.png>)
-![alt text](</img/ss/Screenshot 2026-11-02 164033.png>)
+![alt text](<img width="1440" height="900" alt="Screen Shot 2026-11-02 at 20 02 57" src="https://github.com/user-attachments/assets/b6093d87-d6ef-41fd-981b-3da58e603c8a" />
+![alt text](<img width="1440" height="900" alt="Screen Shot 2026-11-02 at 20 03 24" src="https://github.com/user-attachments/assets/313ce3d5-2ca5-4dc5-a369-f59776c78c5c" />
+![alt text](<img width="1440" height="900" alt="Screen Shot 2026-11-02 at 20 03 33" src="https://github.com/user-attachments/assets/b687f34c-4e4e-4c67-a39e-926127d6d909" />
+
+![alt text](<img width="1440" height="900" alt="Screen Shot 2026-11-02 at 20 03 42" src="https://github.com/user-attachments/assets/81dc552f-8a48-427f-ad9c-0ae0a141657d" />
+![alt text](<img width="1440" height="900" alt="Screen Shot 2026-11-02 at 20 03 49" src="https://github.com/user-attachments/assets/73629bd5-377a-4ee2-aad9-a58d3d837de5" />
+![alt text](<img width="1440" height="900" alt="Screen Shot 2026-11-02 at 20 04 29" src="https://github.com/user-attachments/assets/e25871b8-4f62-4478-8628-095d76505ba9" />
+![alt text](<img width="1440" height="900" alt="Screen Shot 2026-11-02 at 20 04 35" src="https://github.com/user-attachments/assets/786bae49-27ef-4027-af69-d2b4fd45dc0d" />
+
+
+
 
 
 ### link youtube
